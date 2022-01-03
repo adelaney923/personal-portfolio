@@ -5,6 +5,8 @@ import AboutMe from './Components/AboutMe';
 import ProjectDisplay from './Components/ProjectDisplay';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
   return (

@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+/* styling for landing page */
+.index-container {
+    height: 90vh;
+    position: relative;
+    text-align: center;
+    background-color: black;
+    color: white;
+    /* filter: blur(3px);
+  -webkit-filter: blur(3px); */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.welcome-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro-statement {
+    font-size: 250%
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.intro-line {
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    text-align: center;
+    /* margin-left: 18%; */
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #0000ff;
+    /* //steps sets the frames, 25 is number of characters */
+    animation: type 3s steps(25, end), blink .75s step-end infinite; 
+    box-sizing: border-box;
+}
+@keyframes type { 
+  from { 
+      width: 0% 
+    } 
+   to {
+       width: 100%
+   }
+}
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #0000ff
+    }
+}
+.landingBut {
+  background-color: black;
   color: white;
+  border: 1px solid white;
 }
 
-.App-link {
-  color: #61dafb;
+/* styling for about me section */
+.about-me-text {
+    margin: 15px;
+    text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-me-image {
+    width: 30%;
+    border-radius: 50%;
+    /* margin: 15px; */
+}
+.about-me-image:hover {
+    filter: grayscale(80%)
+}
+.skills-icons {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skill {
+    color: black;
+    font-size: 40px;
 }

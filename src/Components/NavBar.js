@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['Home', 'About Me', 'Projects', 'Contact'];
+const pages = ['About Me', 'Projects', 'Contact'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -29,7 +29,7 @@ const ResponsiveAppBar = () => {
   return (
     <AppBar
       position="static"
-      sx={{ backgroundColor: "#efefef", color: "black" }}
+      sx={{ backgroundColor: "white", color: "black" }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -39,7 +39,7 @@ const ResponsiveAppBar = () => {
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
           >
-            LOGO
+            AD
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -84,7 +84,7 @@ const ResponsiveAppBar = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
-            LOGO
+            AD
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (

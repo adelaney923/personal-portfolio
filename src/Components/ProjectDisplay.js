@@ -22,62 +22,72 @@ function ProjectDisplay() {
       <Box sx={{ flexGrow: 1, border: 0 }}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Item>
               <h2>Projects.</h2>
-            </Item>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} md={4}>
             <Item>
-              <Card class="projectCard">
-                <Card.Img
-                  variant="top"
-                  src="https://res.cloudinary.com/adelaney923/image/upload/v1641161780/Portfolio%20Images/Screen_Shot_2022-01-02_at_2.15.23_PM_hizu5u.png"
+              <div>
+                <img
+                  class="projectImg"
+                  alt="easyVegan"
+                  src="https://res.cloudinary.com/adelaney923/image/upload/v1641253010/Portfolio%20Images/Screen_Shot_2022-01-03_at_3.36.21_PM_q9irtd.png"
                 />
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-              </Card>
-            </Item>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Item>
-              <Card class="projectCard">
-                <Card.Img
-                  variant="top"
-                  src="https://res.cloudinary.com/adelaney923/image/upload/v1641161780/Portfolio%20Images/Screen_Shot_2022-01-02_at_2.15.23_PM_hizu5u.png"
-                />
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-              </Card>
-            </Item>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Item>
-              <Card class="projectCard">
-              <Card.Img
-                variant="top"
-                src="https://res.cloudinary.com/adelaney923/image/upload/v1641161780/Portfolio%20Images/Screen_Shot_2022-01-02_at_2.15.23_PM_hizu5u.png"
-              />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
+                <h5>easyVegan</h5>
+                <p>
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
+                </p>
+                <Button class="projectBut" variant="primary">
+                  Live Site
+                </Button>
+                <Button class="projectBut" variant="primary">
+                  Git
+                </Button>
+              </div>
+            </Item>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Item>
+              <div>
+                <img
+                  class="projectImg"
+                  alt="TravelGram"
+                  src="https://res.cloudinary.com/adelaney923/image/upload/v1541253002/Portfolio%20Images/Screen_Shot_2022-01-03_at_3.35.39_PM_klkkpw.png"
+                />
+                <h5>TravelGram</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <Button class="projectBut" variant="primary">
+                  Live Site
+                </Button>
+                <Button class="projectBut" variant="primary">
+                  Git
+                </Button>
+              </div>
+            </Item>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Item>
+              <div>
+                <img
+                  class="projectImg"
+                  alt="LabList"
+                  src="https://res.cloudinary.com/adelaney923/image/upload/v1541253015/Portfolio%20Images/Screen_Shot_2022-01-03_at_3.35.54_PM_de5qv2.png"
+                />
+                <h5>LabList</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <Button class="projectBut" variant="primary">
+                  Live Site
+                </Button>
+                <Button class="projectBut" variant="primary">
+                  Git
+                </Button>
+              </div>
             </Item>
           </Grid>
         </Grid>

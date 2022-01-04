@@ -21,13 +21,12 @@
     font-family: 'Roboto Mono', monospace;
     font-style: italic;
     text-align: center;
-    /* margin-left: 18%; */
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
     border-right: 4px solid #0000ff;
     /* //steps sets the frames, 25 is number of characters */
-    animation: type 3s steps(25, end), blink .75s step-end infinite; 
+    animation: type 3s steps(18, end), blink .75s step-end infinite; 
     box-sizing: border-box;
 }
 @keyframes type { 
@@ -35,7 +34,7 @@
       width: 0% 
     } 
    to {
-       width: 100%
+       width: 80%
    }
 }
 @keyframes blink {
@@ -47,12 +46,24 @@
     }
 }
 .landingBut {
-  background-color: black;
-  color: white;
-  border: 1px solid white;
+  /* color: black !important; */
+  background-color: black !important;
+  border: 1px solid white !important;
+  margin: 0px 5px;
+  width: 100px;
+  padding: 0px;
+}
+.landingBut:hover {
+  border: 1px solid #0000ff !important;
 }
 
 /* styling for about me section */
+/* #aboutPage {
+  height: 90vh;
+} */
+.about, .skills {
+  height: 375px;
+}
 .about-me-text {
     margin: 15px;
     text-align: center;
@@ -75,4 +86,81 @@
 .skill {
     color: black;
     font-size: 40px;
+    margin: 30px;
+}
+
+/* styling for project page  */
+/* #projectPage {
+  height: 90vh;
+} */
+.projectImg {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* styling for contact form  */
+.contactcontainer {
+  position: relative;
+  background-color: black;
+  height: 90vh;
+  width: 100%;
+  margin: 0px;
+}
+/* Bottom right text */
+.formblock {
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  right: 15%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  height: 350px;
+  width: 350px;
+}
+
+.formblock form {
+  border-radius: 8px;
+  background: white;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+.formblock input,
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin-left: 10px !important;
+  background: none;
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid #1DC7E9;
+  justify-content: center;
+}
+.formblock textarea {
+    height: 40%;
+}
+.formblock button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 20px;
+  background-color: #1DC7E9;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.formblock h3 {
+  font-family: 'Saira Semi Condensed', sans-serif;  
+  text-align: center;
+  margin-top: 15px;
+}
+.submitText {
+    margin: 40% auto;
+    font-size: 130%;
+    justify-content: center;
+}
+.thanks {
+    color: #1DC7E9
 }

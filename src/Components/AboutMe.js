@@ -14,16 +14,14 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const AboutMe = () => {
   return (
+    <div id="aboutPage">
     <Box sx={{ flexGrow: 1, border: 0 }}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <Item>
-            <h2>About Me.</h2>
-          </Item>
+          <h2>About Me.</h2>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Item>
-            <div class="about">
               <div class="about-content">
                 <h3>Who Am I?</h3>
                 <img
@@ -42,7 +40,6 @@ const AboutMe = () => {
                   language or framework to learn.
                 </p>
               </div>
-            </div>
           </Item>
         </Grid>
         <Grid item xs={12} sm={6}>
@@ -86,6 +83,7 @@ const AboutMe = () => {
         </Grid>
       </Grid>
     </Box>
+    </div>
   );
 }
 

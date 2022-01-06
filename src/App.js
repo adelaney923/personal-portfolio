@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react'
 import ResponsiveAppBar from './Components/NavBar';
 import LandingPage from './Components/LandingPage';
 import AboutMe from './Components/AboutMe';

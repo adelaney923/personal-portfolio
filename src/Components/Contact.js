@@ -55,7 +55,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-form">
+    <div id="contact">
       <div className="contactcontainer">
         {/* <img
           className="labphoto"

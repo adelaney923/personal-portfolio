@@ -4,13 +4,6 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 
-const Item = styled(Paper)(({ theme }) => ({
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-  border: 0,
-}));
 
 const AboutMe = () => {
   return (
@@ -20,10 +13,10 @@ const AboutMe = () => {
         <Grid item xs={12}>
           <h2>About Me.</h2>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <Item>
+        <Grid item xs={12}>
+          {/* <Item> */}
+          <div class='aboutContainer'>
               <div class="about-content">
-                <h3>Who Am I?</h3>
                 <img
                   alt="profilepic"
                   class="about-me-image"
@@ -40,10 +33,10 @@ const AboutMe = () => {
                   language or framework to learn.
                 </p>
               </div>
-          </Item>
+          {/* </Item>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Item>
+          <Item> */}
             <div class="skills">
               <h3 id="skills-page">
                 <span class="sub-header">Skills.</span>
@@ -79,7 +72,8 @@ const AboutMe = () => {
                 </div>
               </div>
             </div>
-          </Item>
+            </div>
+          {/* </Item> */}
         </Grid>
       </Grid>
     </Box>

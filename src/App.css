@@ -1,3 +1,6 @@
+a {
+  text-decoration: none !important;
+}
 /* styling for landing page */
 .index-container {
     height: 90vh;
@@ -47,6 +50,7 @@
 }
 .landingBut {
   /* color: black !important; */
+  color: white !important;
   background-color: black !important;
   border: 1px solid white !important;
   margin: 0px 5px;
@@ -61,9 +65,21 @@
 /* #aboutPage {
   height: 90vh;
 } */
-.about, .skills {
-  height: 375px;
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+
+@media only screen and (max-width: 768px) {
+  .aboutContainer {
+    flex-wrap: wrap;
+  }
+}
+.about-content, .skills {
+  flex-basis: 100%
+}
+
 .about-me-text {
     margin: 15px;
     text-align: center;
@@ -78,7 +94,7 @@
 }
 .skills-icons {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
@@ -87,6 +103,9 @@
     color: black;
     font-size: 40px;
     margin: 30px;
+}
+.css, .html, .react, .nodejs, .python, .js, .git {
+  text-align: center;
 }
 
 /* styling for project page  */
@@ -97,6 +116,24 @@
   width: 100%;
   object-fit: cover;
   margin-bottom: 15px;
+}
+.projectBut {
+  /* color: black !important; */
+  color: black !important;
+  background-color: white !important;
+  border: 1px solid black !important;
+  margin: 0px 5px;
+  width: 100px;
+  padding: 0px;
+}
+.projectBut:hover {
+  border: 1px solid #0000ff !important;
+}
+@media only screen and (max-width: 768px) {
+  .projectItem {
+    width: 90%;
+    margin: 0px auto;
+  }
 }
 
 /* styling for contact form  */

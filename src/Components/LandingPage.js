@@ -4,6 +4,7 @@ import '../App.css'
 
 const LandingPage = () => {
     return (
+        <div id='landingPage'>
       <div class="index-container">
         {/* <img class ='index-image' src='https://res.cloudinary.com/adelaney923/image/upload/v1634233239/Portfolio%20Images/Screen_Shot_2021-10-14_at_10.39.11_AM_j45hbg.png' /> */}
         <div class="welcome-text">
@@ -14,12 +15,13 @@ const LandingPage = () => {
             <span class="intro-line">Software Engineer.</span>
           </h3>
           <Button className="landingBut" variant="primary">
-            About Me
+            <a href="#aboutPage">About Me</a>
           </Button>
           <Button className="landingBut" variant="primary">
-            Projects
+            <a href="#projectPage">Projects</a>
           </Button>
         </div>
+      </div>
       </div>
     );
 }

@@ -22,10 +22,10 @@ function ProjectDisplay() {
       <Box sx={{ flexGrow: 1, border: 0 }}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
-              <h2>Projects.</h2>
+            <h2>Projects.</h2>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Item>
+            <Item className="projectItem">
               <div>
                 <img
                   class="projectImg"
@@ -37,17 +37,17 @@ function ProjectDisplay() {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <Button class="projectBut" variant="primary">
+                <Button className="projectBut" variant="primary">
                   Live Site
                 </Button>
-                <Button class="projectBut" variant="primary">
+                <Button className="projectBut" variant="primary">
                   Git
                 </Button>
               </div>
             </Item>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Item>
+            <Item className="projectItem">
               <div>
                 <img
                   class="projectImg"
@@ -59,17 +59,17 @@ function ProjectDisplay() {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <Button class="projectBut" variant="primary">
+                <Button className="projectBut" variant="primary">
                   Live Site
                 </Button>
-                <Button class="projectBut" variant="primary">
+                <Button className="projectBut" variant="primary">
                   Git
                 </Button>
               </div>
             </Item>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Item>
+            <Item className="projectItem">
               <div>
                 <img
                   class="projectImg"
@@ -81,10 +81,10 @@ function ProjectDisplay() {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <Button class="projectBut" variant="primary">
+                <Button className="projectBut" variant="primary">
                   Live Site
                 </Button>
-                <Button class="projectBut" variant="primary">
+                <Button className="projectBut" variant="primary">
                   Git
                 </Button>
               </div>

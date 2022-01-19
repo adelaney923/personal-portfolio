@@ -1,6 +1,12 @@
 a {
   text-decoration: none !important;
 }
+#aboutPage, #projectPage, #contact {
+  padding-top: 65px;
+}
+.navLinks {
+  color: black;
+}
 /* styling for landing page */
 .index-container {
     height: 90vh;
@@ -60,11 +66,15 @@ a {
 .landingBut:hover {
   border: 1px solid #0000ff !important;
 }
+.landingBut a {
+  color: white !important
+}
 
 /* styling for about me section */
 /* #aboutPage {
   height: 90vh;
 } */
+
 .aboutContainer {
   display: flex;
   flex-direction: row;
@@ -112,6 +122,14 @@ a {
 /* #projectPage {
   height: 90vh;
 } */
+.projectItem {
+  padding: 16px;
+  background-color: black;
+  margin: 5px;
+}
+.projectBox {
+  height: 475px;
+}
 .projectImg {
   width: 100%;
   object-fit: cover;
@@ -126,73 +144,34 @@ a {
   width: 100px;
   padding: 0px;
 }
+.projectBut a {
+  color: black;
+}
 .projectBut:hover {
   border: 1px solid #0000ff !important;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .projectItem {
     width: 90%;
-    margin: 0px auto;
+    height: auto;
+    /* margin: 0px 5px;
+    justify-content: center; */
+  }
+  .projectBox {
+    height: auto;
+    margin: 0px auto !important;
   }
 }
 
 /* styling for contact form  */
 .contactcontainer {
   position: relative;
-  background-color: black;
-  height: 90vh;
+  background-color: white;
+  height: 70vh;
   width: 100%;
   margin: 0px;
 }
-/* Bottom right text */
-.formblock {
-  position: absolute;
-  margin-top: auto;
-  margin-bottom: auto;
-  top: 0;
-  bottom: 0;
-  right: 15%;
-  background-color: white;
-  color: black;
-  text-align: center;
-  height: 350px;
-  width: 350px;
-}
 
-.formblock form {
-  border-radius: 8px;
-  background: white;
-  font-family: 'Saira Semi Condensed', sans-serif;
-}
-.formblock input,
-textarea {
-  width: 90%;
-  padding: 10px;
-  margin-left: 10px !important;
-  background: none;
-  outline: none;
-  border: 0;
-  border-bottom: 2px solid #1DC7E9;
-  justify-content: center;
-}
-.formblock textarea {
-    height: 40%;
-}
-.formblock button {
-  float: right;
-  padding: 8px 12px;
-  margin: 8px 20px;
-  background-color: #1DC7E9;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-.formblock h3 {
-  font-family: 'Saira Semi Condensed', sans-serif;  
-  text-align: center;
-  margin-top: 15px;
-}
 .submitText {
     margin: 40% auto;
     font-size: 130%;

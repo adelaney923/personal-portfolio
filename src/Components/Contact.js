@@ -1,6 +1,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import '../App.css'
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import Grid from "@mui/material/Grid";
+import "../App.css";
 
 const { GoogleSpreadsheet } = require("google-spreadsheet");
 const creds = require("../client_secret.json");
@@ -57,43 +60,66 @@ const Contact = () => {
   return (
     <div id="contact">
       <div className="contactcontainer">
-        {/* <img
-          className="labphoto"
-          src="https://res.cloudinary.com/adelaney923/image/upload/v1640113474/labphoto1_l17oef.jpg"
-          alt="labphoto"
-        /> */}
-        <div className="formblock">
-          {displayForm ? (
-            <form>
-              <h3>Let's Talk</h3>
-              <input
-                type="text"
-                onChange={handleNameChange}
-                value={name}
-                placeholder="Name"
-              />
-              <input
-                type="email"
-                onChange={handleEmailChange}
-                value={email}
-                placeholder="Email"
-              />
-              <textarea
-                type="text"
-                onChange={handleMessageChange}
-                value={message}
-                placeholder="What's on your mind?"
-              />
-              <button onClick={handleSubmit}>{buttonText}</button>
-            </form>
-          ) : (
-            <p className="submitText">
-              <span className="thanks">Thank you.</span>
-              <br />
-              We will be in contact soon.
-            </p>
-          )}
-        </div>
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            <h2>Contact.</h2>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <div>
+              <p>
+                Looking to take on new projects. Please fill out the form or
+                message me directly on LinkedIn.
+              </p>
+              <a
+                href="https://www.linkedin.com/in/adelaney923/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedInIcon />
+              </a>
+              <a
+                href="https://github.com/adelaney923"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GitHubIcon />
+              </a>
+              <p>Resume</p>
+            </div>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <div className="formblock">
+              {displayForm ? (
+                <form>
+                  <input
+                    type="text"
+                    onChange={handleNameChange}
+                    value={name}
+                    placeholder="Name"
+                  />
+                  <input
+                    type="email"
+                    onChange={handleEmailChange}
+                    value={email}
+                    placeholder="Email"
+                  />
+                  <textarea
+                    type="text"
+                    onChange={handleMessageChange}
+                    value={message}
+                    placeholder="What's on your mind?"
+                  />
+                  <button onClick={handleSubmit}>{buttonText}</button>
+                </form>
+              ) : (
+                <p className="submitText">
+                  <span className="thanks">Thank you!</span>
+                  <br />I will be in contact soon.
+                </p>
+              )}
+            </div>
+          </Grid>
+        </Grid>
       </div>
     </div>
   );

@@ -75,17 +75,23 @@ const ResponsiveAppBar = () => {
               ))} */}
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
-                  <a href="#aboutPage">About</a>
+                  <a className="navLinks" href="#aboutPage">
+                    About
+                  </a>
                 </Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
-                  <a href="#projectPage">Projects</a>
+                  <a className="navLinks" href="#projectPage">
+                    Projects
+                  </a>
                 </Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
-                  <a href="#contact">Contact</a>
+                  <a className="navLinks" href="#contact">
+                    Contact
+                  </a>
                 </Typography>
               </MenuItem>
             </Menu>
@@ -113,27 +119,33 @@ const ResponsiveAppBar = () => {
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "black", display: "block" }}
             >
-              <a href="#aboutPage">About</a>
+              <a className="navLinks" href="#aboutPage">
+                About
+              </a>
             </Button>
             <Button
               key="about"
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "black", display: "block" }}
             >
-              <a href="#projectPage">Projects</a>
+              <a className="navLinks" href="#projectPage">
+                Projects
+              </a>
             </Button>
             <Button
               key="about"
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "black", display: "block" }}
             >
-              <a href="#contact">Contact</a>
+              <a className="navLinks" href="#contact">
+                Contact
+              </a>
             </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <IconButton sx={{ p: 0 }}>
-              <a href="#landingPage">
+              <a className="navLinks" href="#landingPage">
                 <Avatar
                   alt="Profile pic"
                   src="https://res.cloudinary.com/adelaney923/image/upload/v1634061287/Portfolio%20Images/IMG_1511_Facetune_10-10-2021-19-50-05_ddomkt.jpg"

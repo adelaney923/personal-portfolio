@@ -22,7 +22,7 @@ function ProjectDisplay() {
       <Box sx={{ flexGrow: 1, border: 0 }}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <h2>Projects.</h2>
+            <p className="headers">Projects.</p>
           </Grid>
           <Grid item xs={12} md={4} className="projectItem">
             <Item className="projectBox">
@@ -34,7 +34,7 @@ function ProjectDisplay() {
                 />
                 <h4>easyVegan</h4>
                 <h6>REACT.js | RESTful APIs</h6>
-                <p>
+                <p className="otherText">
                   Utilizing a few different Vegan APIs including recipes and
                   news, easyVegan is a perfect resource for the transition into
                   veganism. User can browse and search recipes, read the latest
@@ -72,7 +72,7 @@ function ProjectDisplay() {
                 />
                 <h4>TravelGram</h4>
                 <h6>REACT.js | Node.js | Express | MongoDb</h6>
-                <p>
+                <p className="otherText">
                   TravelGram creates a space for users to share everything
                   Travel to a social like platform. Users signup to make a
                   profile and then create post sharing a photo, location, etc.
@@ -109,7 +109,7 @@ function ProjectDisplay() {
                 />
                 <h4>LabList</h4>
                 <h6>REACT.js | Node.js | Python | Django </h6>
-                <p>
+                <p className="otherText">
                   LabList allows users to login and create their lab inventory.
                   Using a Django backend with React frontend, users have full
                   CRUD capability to update inventory.

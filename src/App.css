@@ -4,6 +4,23 @@ a {
 #aboutPage, #projectPage, #contact {
   padding-top: 65px;
 }
+.headers {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+h4, h6 {
+  font-family: 'Bebas Neue', cursive;
+}
+h3 {
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+
+}
+.otherText {
+  font-family: 'Merriweather Sans', sans-serif;
+}
 .navLinks {
   color: black;
 }
@@ -24,7 +41,7 @@ a {
     transform: translate(-50%,-50%);
 }
 .intro-statement {
-    font-size: 250%
+    font-size: 200%
 }
 .intro-line {
     font-family: 'Roboto Mono', monospace;
@@ -67,7 +84,8 @@ a {
   border: 1px solid #0000ff !important;
 }
 .landingBut a {
-  color: white !important
+  color: white !important;
+  font-family: 'Bebas Neue', cursive;
 }
 
 /* styling for about me section */
@@ -89,7 +107,10 @@ a {
 .about-content, .skills {
   flex-basis: 100%
 }
-
+.about-content {
+  padding: 0px 10px;
+  text-align: center;
+}
 .about-me-text {
     margin: 15px;
     text-align: center;
@@ -146,6 +167,7 @@ a {
 }
 .projectBut a {
   color: black;
+  font-family: 'Bebas Neue', cursive;
 }
 .projectBut:hover {
   border: 1px solid #0000ff !important;
@@ -171,11 +193,39 @@ a {
   width: 100%;
   margin: 0px;
 }
-
+.contactText {
+  margin: 0px auto;
+  text-align: center;
+  font-size: 110%;
+}
+.contactLinks {
+  color: black;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 110%;
+  margin: 10px;
+}
 .submitText {
     margin: 40% auto;
     font-size: 130%;
     justify-content: center;
+}
+.formblock{
+  margin: 0px 5px;
+  text-align: center;
+}
+input, textarea{
+  width: 75%;
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-bottom: 10px !important;
+}
+.formBut {
+  font-family: 'Bebas Neue', cursive;
+  color: black !important;
+  background-color: white !important;
+  border: 1px solid black !important;
+  margin: 0px 5px;
+  padding: 0px;
+  width: 20%;
 }
 .thanks {
     color: #1DC7E9

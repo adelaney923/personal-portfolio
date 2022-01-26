@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import {Button} from 'react-bootstrap'
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Grid from "@mui/material/Grid";
@@ -62,18 +63,20 @@ const Contact = () => {
       <div className="contactcontainer">
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <h2>Contact.</h2>
+            <p className="headers">Contact.</p>
           </Grid>
           <Grid item xs={12} md={6}>
-            <div>
-              <p>
-                Looking to take on new projects. Please fill out the form or
-                message me directly on LinkedIn.
+            <div className="contactText">
+              <p className="otherText">
+                Looking to take on new projects.
+                <br />
+                Please fill out the form or message me directly on LinkedIn.
               </p>
               <a
                 href="https://www.linkedin.com/in/adelaney923/"
                 target="_blank"
                 rel="noreferrer"
+                className="contactLinks"
               >
                 <LinkedInIcon />
               </a>
@@ -81,10 +84,19 @@ const Contact = () => {
                 href="https://github.com/adelaney923"
                 target="_blank"
                 rel="noreferrer"
+                className="contactLinks"
               >
                 <GitHubIcon />
               </a>
-              <p>Resume</p>
+              <br />
+              <a
+                href="https://drive.google.com/file/d/1KrtyW0fiSHcMHEYHbtjhwffuEDedrn2H/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                className="contactLinks"
+              >
+                Resume
+              </a>
             </div>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -95,21 +107,24 @@ const Contact = () => {
                     type="text"
                     onChange={handleNameChange}
                     value={name}
-                    placeholder="Name"
+                    placeholder="Your Name"
                   />
+
                   <input
                     type="email"
                     onChange={handleEmailChange}
                     value={email}
-                    placeholder="Email"
+                    placeholder="Your Email"
                   />
+
                   <textarea
                     type="text"
                     onChange={handleMessageChange}
                     value={message}
-                    placeholder="What's on your mind?"
+                    placeholder="Your Message"
                   />
-                  <button onClick={handleSubmit}>{buttonText}</button>
+                  <br/>
+                  <Button className="formBut" variant='primary' onClick={handleSubmit}>{buttonText}</Button>
                 </form>
               ) : (
                 <p className="submitText">
